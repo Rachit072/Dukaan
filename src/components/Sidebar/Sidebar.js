@@ -26,7 +26,7 @@ const Sidebar = () => {
         <li className={`nav-item${isLinkActive('/marketing')}`}><Link to="/marketing" className="nav-link"><FontAwesomeIcon icon={faBullhorn} className="nav-icon" /> Marketing</Link></li>
         <li className={`nav-item${isLinkActive('/analytics')}`}><Link to="/analytics" className="nav-link"><FontAwesomeIcon icon={faChartBar} className="nav-icon" /> Analytics</Link></li>
         <li className={`nav-item${isLinkActive('/payments')}`}><Link to="/payments" className="nav-link"><FontAwesomeIcon icon={faCreditCard} className="nav-icon" /> Payments</Link></li>
-        <li className={`nav-item${isLinkActive('/tools')}`}><Link to="/tools" className="nav-link"><FontAwesomeIcon icon={faTools} className="nav-icon" /> Tools</Link></li>
+        <li className={`nav-item${isLinkActive('/tools')}`}><Link to="/" className="nav-link"><FontAwesomeIcon icon={faTools} className="nav-icon" /> Tools</Link></li>
         <li className={`nav-item${isLinkActive('/discounts')}`}><Link to="/discounts" className="nav-link"><FontAwesomeIcon icon={faPercent} className="nav-icon" /> Discounts</Link></li>
         <li className={`nav-item${isLinkActive('/audience')}`}><Link to="/audience" className="nav-link"><FontAwesomeIcon icon={faUsers} className="nav-icon" /> Audience</Link></li>
         <li className={`nav-item${isLinkActive('/appearance')}`}><Link to="/appearance" className="nav-link"><FontAwesomeIcon icon={faPalette} className="nav-icon" /> Appearance</Link></li>

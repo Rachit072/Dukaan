@@ -2,6 +2,8 @@
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    font-size: x-small;
+    overflow:hidden ;
   }
   
   .section-container h2 {
@@ -16,4 +18,24 @@
   .section-container li {
     margin-bottom: 5px;
   }
+  .order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
   
+  .order-id {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .order-date {
+    color: #555;
+  }
+  
+  .total-amount {
+    font-weight: bold;
+    font-size: 18px;
+    color: #27ae60;
+  }  

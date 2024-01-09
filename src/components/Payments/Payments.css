@@ -55,3 +55,39 @@
     width: 300px;
     background-color: rgb(242, 242, 242);
   }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    color: rgb(76, 76, 76);
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+  .pagination button{
+    font-size: medium;
+    border: none;
+    background: transparent;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: rgb(98,98,98);
+  }
+ 
+  .pagination button.active {
+    background-color: rgb(20,110,180);
+    color: white; 
+  }
+ .circle-how{
+    border: 1px solid rgb(120,125,140);
+    border-radius: 50%;
+    font-size: x-small;
+    padding: 0px 2px;
+    color: rgb(140,145,140);
+ }
+ .arrowdown{
+    background-color: rgb(234, 243, 234);
+    border-radius: 50px; 
+    padding: 5px;
+ }
+  

@@ -9,6 +9,10 @@ import Products from './components/Products/Products';
 import Marketing from './components/Marketing/Marketing';
 import Delivery from './components/Delivery/Delivery';
 import Analytics from './components/Analytics/Analytics';
+import Tools from './components/Tools/Tools';
+import Discounts from './components/Discounts/Discounts';
+import Appearance from './components/Appearance/Appearance';
+import Audience from './components/Audience/Audience';
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
             <Route path="/marketing" element={<Marketing/>} />
             <Route path="/delivery" element={<Delivery/>} />
             <Route path="/analytics" element={<Analytics/>} />
+            <Route path="/tools" element={<Tools/>} />
+            <Route path="/discounts" element={<Discounts/>} />
+            <Route path="/appearance" element={<Appearance/>} />
+            <Route path="/audience" element={<Audience/>} />
           </Routes>
         </main>
       </div>

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faFile, faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faFile, faIndianRupeeSign, faDownload } from '@fortawesome/free-solid-svg-icons';
 import orderData from '../../constants/OrderData.json';
 import './Payments.css';
 
 const Payments = () => {
   const [searchText, setSearchText] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [timeRange, setTimeRange] = useState('Last Month');
+  const [selectedOption, setSelectedOption] = useState('Sort');
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
   const itemsPerPage = 19;
 
   const searchTextLower = searchText.toLowerCase();
@@ -54,7 +60,18 @@ const Payments = () => {
       </div>
       <hr />
       <div className="overview-section">
-        <h3>Overview</h3>
+        <div className='dropdown-container'>
+          <div><h3>Overview</h3></div>
+          <div>
+            <select
+              id="timeRange"
+              style={{ marginLeft: '10px' }}
+            >
+              <option value="Last Month">Last Month</option>
+              <option value="This Month">This Month</option>
+            </select>
+          </div>
+        </div>
         <table style={{ border: 'none' }}>
           <thead>
             <tr style={{ border: 'none', fontSize: 'small' }}>
@@ -72,7 +89,8 @@ const Payments = () => {
       </div>
       <div className="transactions-section">
         <h3>Transactions | This Month</h3>
-        <div className="search-bar" style={{ backgroundColor: 'white', border: '1px solid rgb(217,217,217)', width: '200px' }}>
+        <div className='dropdown-container'>
+        <div className="search-bar" style={{ backgroundColor: 'white', border: '1px solid rgb(217,217,217)', width: '250px' }}>
           <FontAwesomeIcon icon={faSearch} style={{ color: 'rgb(217,217,217)' }} />
           <input
             type="text"
@@ -81,6 +99,11 @@ const Payments = () => {
             onChange={(e) => setSearchText(e.target.value)}
             style={{ backgroundColor: 'white', outline: 'none' }}
           />
+        </div>
+        <div style={{display:'flex'}}>
+          <div className='dropdown-sort'>Sort &#8645;</div>
+          <div className='dropdown-sort'><FontAwesomeIcon icon={faDownload} /></div>
+        </div>
         </div>
         <table>
           <thead>

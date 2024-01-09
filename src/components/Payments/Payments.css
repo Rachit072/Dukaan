@@ -10,12 +10,13 @@
     margin-bottom: 0px;
   }
   
+
   .search-bar {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
-    margin-right: 10px;
+    margin: 0px 10px;
     border: none;
     border-radius: 5px;
     background-color: rgb(242, 242, 242);
@@ -29,7 +30,32 @@
   .transactions-section {
     margin-top: 20px;
   }
-  
+  .dropdown-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  select{
+    border: 1px solid rgb(217,217,217);
+    color: rgb(76, 76, 76);
+    padding: 4px 6px;
+    margin-right: 4px;
+    border-radius: 4px;
+  }
+  select:hover{
+    cursor: pointer;
+  }
+  .dropdown-sort{
+    border: 1px solid rgb(217,217,217);
+    color: rgb(76, 76, 76);
+    padding: 8px 8px 0px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+  }
+  .dropdown-sort:hover{
+    cursor: pointer;
+
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;

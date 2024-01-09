@@ -1,0 +1,57 @@
+.payments-container {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .payments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .arrow-icon {
+    cursor: pointer;
+  }
+  
+  .overview-section,
+  .transactions-section {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #ddd; 
+    border-right: none; 
+    padding: 8px;
+    text-align: right;
+  }
+  
+  th {
+    background-color: rgb(242, 242, 242);
+    color: rgb(120,125,140);
+  }
+  td{
+    text-align: right;
+  }
+  input{
+    border: none;
+    width: 300px;
+    background-color: rgb(242, 242, 242);
+  }

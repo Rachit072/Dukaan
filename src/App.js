@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Home from './components/Home/Home';
 import Payments from './components/Payments/Payments';
+import Orders from './components/Order/Order';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/payments" element={<Payments/>} />
+            <Route path="/orders" element={<Orders/>} />
           </Routes>
         </main>
       </div>

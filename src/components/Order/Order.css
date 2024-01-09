@@ -1,0 +1,19 @@
+.section-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .section-container h2 {
+    color: #333;
+  }
+  
+  .section-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section-container li {
+    margin-bottom: 5px;
+  }
+  
